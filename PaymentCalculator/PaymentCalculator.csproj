@@ -66,6 +66,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MessagesAndOutput.aspx" />
     <None Include="packages.config" />
     <Content Include="PaymentCalculator.Master" />
     <None Include="Web.Debug.config">
@@ -94,6 +95,13 @@
     </Compile>
     <Compile Include="CalculatorInput.aspx.designer.cs">
       <DependentUpon>CalculatorInput.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessagesAndOutput.aspx.cs">
+      <DependentUpon>MessagesAndOutput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessagesAndOutput.aspx.designer.cs">
+      <DependentUpon>MessagesAndOutput.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>
