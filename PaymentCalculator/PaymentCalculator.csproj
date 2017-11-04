@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="PaymentCalculator.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -76,9 +77,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="CalculatorInput.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PaymentCalculator.Master.cs">
+      <DependentUpon>PaymentCalculator.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentCalculator.Master.designer.cs">
+      <DependentUpon>PaymentCalculator.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CalculatorInput.aspx.cs">
+      <DependentUpon>CalculatorInput.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CalculatorInput.aspx.designer.cs">
+      <DependentUpon>CalculatorInput.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
