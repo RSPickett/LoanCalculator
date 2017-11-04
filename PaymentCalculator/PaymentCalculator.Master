@@ -16,7 +16,7 @@
         </div>
     </form>
     <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ContentPlaceHolder ID="MessagesAndOutputPlaceHolder" runat="server">
         </asp:ContentPlaceHolder>
     </div>
 </body>
